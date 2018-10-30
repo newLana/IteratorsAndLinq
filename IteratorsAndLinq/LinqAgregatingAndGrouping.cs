@@ -17,12 +17,12 @@ namespace IteratorsAndLinq
 
         public static int AggregateMax(IEnumerable<int> nums)
         {
-            return nums.Aggregate(nums.FirstOrDefault(), (acc, n) => acc < n ? n : acc);
+            return nums.Aggregate((acc, n) => acc < n ? n : acc);
         }
 
         public static double AggregateAverage(IEnumerable<int> nums)
         {
-            return nums.Aggregate(0.0, (acc, n) => acc += (double)n/nums.Count());
+            return nums.Aggregate(0.0, (acc, n) => acc += n, acc => acc/nums.Count());
         }
 
         //2.2

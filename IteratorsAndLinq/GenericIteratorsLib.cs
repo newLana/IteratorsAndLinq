@@ -3,10 +3,10 @@
 namespace IteratorsAndLinq
 {
     //Task 0
-    public class GenericIterators<T>
+    public class GenericIterators
     {
         //0.2
-        public static IEnumerator<T> GetReverseArray(T[] innerArray)
+        public static IEnumerator<T> GetReverseArray<T>(T[] innerArray)
         {
             for (int i = innerArray.Length - 1; i >= 0; i--)
             {
@@ -15,7 +15,7 @@ namespace IteratorsAndLinq
         }
 
         //0.3
-        public static IEnumerator<T> GetArrayByColumns(T[,] array)
+        public static IEnumerator<T> GetArrayByColumns<T>(T[,] array)
         {
             for (int i = 0; i < array.GetLength(1); i++)
             {

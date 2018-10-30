@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace IteratorsAndLinq
@@ -15,7 +16,7 @@ namespace IteratorsAndLinq
         //1.2
         public static int CountingDistinctLetters(IEnumerable<string> words)
         {
-            return words.SelectMany(w => w.ToUpper().ToCharArray()).Distinct().Count();
+            return words.SelectMany(w => w.ToUpper()).Distinct().Count();
         }
 
         //1.3*

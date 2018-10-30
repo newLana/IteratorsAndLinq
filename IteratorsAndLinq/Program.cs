@@ -67,7 +67,7 @@ namespace IteratorsAndLinq
             }
 
             Console.WriteLine("\nResult");
-            IEnumerator enumGetReverse = GenericIterators<string>.GetReverseArray(strngs);
+            IEnumerator enumGetReverse = GenericIterators.GetReverseArray<string>(strngs);
             while (enumGetReverse.MoveNext())
             {
                 Console.Write(enumGetReverse.Current + " ");
@@ -84,7 +84,7 @@ namespace IteratorsAndLinq
             }
 
             Console.WriteLine("\nResult");
-            IEnumerator enumByCols = GenericIterators<string>.GetArrayByColumns(dictionary);
+            IEnumerator enumByCols = GenericIterators.GetArrayByColumns<string>(dictionary);
             while (enumByCols.MoveNext())
             {
                 Console.Write(enumByCols.Current + "\t");
