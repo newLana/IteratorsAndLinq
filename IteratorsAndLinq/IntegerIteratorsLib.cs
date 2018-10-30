@@ -38,16 +38,16 @@ namespace IteratorsAndLinq
         {
             for (int j = 0; j < firstArray.Length; j++)
             {
-                bool IsDuplicate = false;
+                bool isDuplicate = false;
                 for (int i = 0; i < secondArray.Length; i++)
                 {
                     if (firstArray[j] == secondArray[i])
                     {
-                        IsDuplicate = true;
+                        isDuplicate = true;
                         break;
                     }
                 }
-                if (!IsDuplicate)
+                if (!isDuplicate)
                     yield return firstArray[j];
             }
         }
