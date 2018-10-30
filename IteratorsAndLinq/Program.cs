@@ -222,13 +222,13 @@ namespace IteratorsAndLinq
             //Task 2.3.C
             #region
             Console.WriteLine("Get Pairs Without Reverse Duplicates");
-            foreach (var item in secondNums)
+            foreach (var item in nonDistNums)
             {
                 Console.Write(item + " ");
             }
             Console.WriteLine("\nResult:");
 
-            foreach (var item in LinqAgregatorAndGrouper.GetPairsNumsWithoutReverseDupl(secondNums))
+            foreach (var item in LinqAgregatorAndGrouper.GetPairsNumsWithoutReverseDupl(nonDistNums))
             {
                 Console.WriteLine(item);
             }

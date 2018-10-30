@@ -21,7 +21,7 @@ namespace IteratorsAndLinq
         //1.3*
         public static IEnumerable<int> OrderingIntegers(IEnumerable<int> nums)
         {
-            if (nums.Max(n => n.ToString().Length) == nums.Max(n => n.ToString().Length))
+            if (nums.Max(n => n.ToString().Length) == nums.Min(n => n.ToString().Length))
             {
                 int[] innerNums = nums.ToArray();
 
